@@ -25,7 +25,7 @@ SECRET_KEY = '-qk#0k47u5dbncbx2mu^)2j5n@yx^vrujwe9fcrmlf&ntu+rqg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'a4-cormaccollier-api.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '.herokuapp.com']
 
 CORS_ORIGIN_ALLOW_ALL = True
 

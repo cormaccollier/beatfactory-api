@@ -1,0 +1,1 @@
+web: gunicorn beat_api.wsgi --log-file -
