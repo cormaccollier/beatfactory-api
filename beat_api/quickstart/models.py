@@ -6,6 +6,11 @@ from django.db import models
 
 
 class File(models.Model):
+    def __unicode__(self):
+        return 'Beat: ' + self.name
+
     file = models.FileField(blank=False, null=False)
-    remark = models.CharField(max_length=20)
+    name = models.CharField(max_length=50)
+    price = models.DecimalField(max_digits=5, decimal_places=2)
+    artist = models.CharField(max_length=50)
     timestamp = models.DateTimeField(auto_now_add=True)

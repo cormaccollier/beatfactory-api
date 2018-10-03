@@ -36,6 +36,9 @@ CORS_ALLOW_HEADERS = (
 # Application definition
 
 REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    ),
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework_api_key.permissions.HasAPIAccess',
     )
