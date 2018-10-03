@@ -31,15 +31,14 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ALLOW_HEADERS = (
     'Api-Key',
-    'Content-Type',
 )
 
 # Application definition
 
 REST_FRAMEWORK = {
-    #'DEFAULT_PERMISSION_CLASSES': (
-        #'rest_framework_api_key.permissions.HasAPIAccess',
-    #)
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework_api_key.permissions.HasAPIAccess',
+    )
 }
 
 INSTALLED_APPS = [
@@ -54,7 +53,7 @@ INSTALLED_APPS = [
     'beat_api.quickstart',
     'corsheaders',
 
-    #'rest_framework_api_key',
+    'rest_framework_api_key',
 ]
 
 MIDDLEWARE = [
